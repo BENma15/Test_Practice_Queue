@@ -20,20 +20,23 @@ public:
     
     // TODO: Implement Enqueue(const T& value) operation
     void Enqueue(const T& value) {
-        // TODO: Add element to the rear of the queue
-        // Hint: Use the list's Add method
+        list.Add(value);
     }
     
     // TODO: Implement Dequeue() operation
     T Dequeue() {
-        // TODO: Remove and return the front element
-        // Hint: Use the list's Head method to get the value, then Remove(0)
+        if (list.IsEmpty()) {
+            return 0;
+        }
+        
+        T value = list.Head();
+        list.Remove(0);
+        return value;
     }
     
     // TODO: Implement Peek() operation
     T Peek() const {
-        // TODO: Return the front element without removing it
-        // Hint: Use the list's Head method
+        return list.Head();
     }
     
     // Utility functions
