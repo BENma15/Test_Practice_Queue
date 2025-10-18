@@ -1,0 +1,3 @@
+/workspaces/Test_Practice_Queue/build/CMakeFiles/queue.dir
+/workspaces/Test_Practice_Queue/build/CMakeFiles/edit_cache.dir
+/workspaces/Test_Practice_Queue/build/CMakeFiles/rebuild_cache.dir
